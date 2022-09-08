@@ -1,0 +1,78 @@
+<div class="header" *ngIf='movieSelected'>
+    <div class="imgHeader" style="background-image: url({{bgimage}}); height: 100%;">
+        <div class="filtro">
+
+            <app-header-one></app-header-one>
+
+
+        </div>
+        <div class="view" fxLayout="column" fxLayoutAlign="space-around none" style="width: 100%; ">
+
+
+            <div div fxLayout="column" fxLayoutAlign="center none"
+                style="width: 100%; height: 550px;  margin-top: 50px; ">
+
+                <!-- filme -->
+                <div fxLayout="row" fxLayoutAlign="center center" style=" width: 100%; height: 350px;">
+                    <div>
+                        <iframe width="800" height="350" src="https://www.youtube.com/embed/jfVTJm9NilA">
+                        </iframe>
+                    </div>
+
+                </div>
+
+                <!-- nome -->
+                <div fxLayout="row" fxLayoutAlign="center center" style="width: 100%; height: auto">
+                    <h1>{{movieSelected.title}}</h1>
+                </div>
+
+                <!-- data -->
+                <div fxLayout="row" fxLayoutAlign="center center" style="width: 100%; height: auto; margin-top: -25px;">
+                    <h2>{{releaseDate}}</h2>
+                </div>
+
+                <!-- descrição -->
+                <div fxLayout="row" fxLayoutAlign="center center" style=" width: 100%; height: auto;">
+                    <div style=" padding-left: 10%; padding-right: 10%;">
+
+                        <span>
+                           {{movieSelected.overview}}
+                        </span>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div fxLayout="row" fxLayoutAlign="space-around center"
+                style="width: 100%; height: 50px;  margin-top: 10px;">
+                <mat-accordion style="width: 100%;">
+                    <mat-expansion-panel>
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                                Comentários
+                            </mat-panel-title>
+                            <mat-panel-description>
+                                Clique para exibir os comentários
+                            </mat-panel-description>
+                        </mat-expansion-panel-header>
+                        <div style="text-align: center;">
+                            Desculpe! ainda estamos desenvolvendo
+
+                        </div>
+                    </mat-expansion-panel>
+                </mat-accordion>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<!--  adiocionar footer -->
