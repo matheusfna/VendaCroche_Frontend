@@ -34,9 +34,13 @@
   right: 0;
   height: 400px;
   background-size: 100%;
-  background-image: url("../../../assets/imagens/star-home.jpg");
+  background-color: #7D336D;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.main{
+  background-color: #7D336D;
 }
 
 .wellcome {
@@ -60,7 +64,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgb(40 106 177);
+  background-color: rgb(74, 12, 80);
   border-radius: 40px;
   padding: 10px;
 }
@@ -91,7 +95,7 @@
 
 .caixa-texto {
   border: none;
-  background-color: rgb(40 106 177);
+  background-color: rgb(74, 12, 80);
   outline: none;
   float: left;
   padding: 0;

@@ -9,13 +9,12 @@
         <img src="../../../assets/imagens/LogoTatiCroche 2.png" style="width: 100px; height: 100px;">
       </div>
     </a>
-    <div *ngIf="!userLogin" style="width: 224px;">
+    <div *ngIf="!userLogin" style="width: 304px;">
       <div style="float: left; margin-right: 5px; width: 74px;">
         <a [routerLink]="['/login']" title="Login" *ngIf="rotaAtiva !== '/login' "> Entrar </a>
       </div>
-      
-      <div style="float: left; width: 144px;" >
-
+    
+      <div style="float: right; width: 144px;" >
         <a [routerLink]="['/register']" title="Login" *ngIf="rotaAtiva !== '/register' "> Cadastre-se </a>
       </div>
     </div>

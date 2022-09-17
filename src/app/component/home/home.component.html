@@ -5,14 +5,14 @@
 
         <div class="center-text">
             <div class="wellcome">
-                Bem vindo ao CzarVideos!
+                Bem vindo a Tati Crochês!
                 <br>
                 <br>
-                Viagem em um novo mundo, pelo seus filmes e series favoritas.
+                PLACEHOLDER - TEXTO HEADER (home component html).
 
 
                 <section class="caixa-search">
-                    <input class="caixa-texto" type="text" name="" placeholder="Ex: Star Wars brabo"
+                    <input class="caixa-texto" type="text" name="" placeholder="Ex: Boneca"
                         [(ngModel)]="search" (ngModelChange)="filterSearch()">
                     <a class="botao-search" href="#" *ngIf="search == null || search == '' ">
                         <i class="fas fa-search pointer"></i>
@@ -28,7 +28,7 @@
 
 </div>
 
-
+<div class="main">
 <div *ngIf="search == null || search == '' ">
     <div fxLayout="column" fxLayoutAlign="none" style="width: 100%; height: auto; margin-bottom: 30px;">
         <div fxLayout="column" fxLayoutAlign="end start" style="width: 100%; height: auto; ">
@@ -159,7 +159,7 @@
                 </div>
             </div>
 
-
+        </div>
         </div>
 
     </div>

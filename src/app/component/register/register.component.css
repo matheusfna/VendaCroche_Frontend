@@ -5,9 +5,9 @@
   left: 0;
   right: 0;
   height:100vh;
-  background-image: url('../../../assets/imagens/123456.jpg');
   background-position: center;
   background-size: 100%;
+  background-color: #7D336D;
   background-repeat: no-repeat;
   position: relative;
 }
@@ -51,7 +51,7 @@ h1{
 }
 
 .matriz{
-  background-color: rgb(40 106 177 / 90%); 
+  background-color: #ac2c90; 
   width: 85%; height: 80%; 
   padding: 10px; border-top-left-radius: 30px;
   border-top-right-radius: 30px;
@@ -98,7 +98,7 @@ h1{
 .button-cadastrar:hover{
   color: white; 
   border-radius: 10px; 
-  background-color: #248bf8;
+  background-color: #f824b1;
   border-style: solid; 
   width: 80%; 
   font-size: 18px; 
