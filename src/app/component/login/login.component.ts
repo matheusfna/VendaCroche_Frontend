@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  email: string = 'czarvideos@fumec.com'
+  email: string = 'taticroche@croche.com'
   password: string = '123456789'
   errorEmail = false;
   errorPassword = false;
