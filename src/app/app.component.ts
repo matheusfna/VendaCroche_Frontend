@@ -16,7 +16,7 @@ export class AppComponent {
 
     {
       nome: "CzarAdmin",
-      email: 'czarvideos@fumec.com',
+      email: 'tatiCroche@fumec.com',
       password: '123456789'
     },    {
       nome: "teste",

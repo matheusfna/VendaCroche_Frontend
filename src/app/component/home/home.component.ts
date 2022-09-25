@@ -28,8 +28,9 @@ export class HomeComponent implements OnInit {
 
   }
 
-  filmes = [
+  /*filmes = [
     {
+<<<<<<< HEAD
       name: "Boneco 1",
       path: "assets/imagens/1.jpg",
     },
@@ -74,6 +75,12 @@ export class HomeComponent implements OnInit {
       path: "assets/imagens/4.jpg",
     }
   ]
+=======
+      name: Colocar o nome do croche,
+      path: "assets/imagens/colocarFotoCroche.jpeg",
+    },    
+  ]*/
+>>>>>>> 7314bd15d02b997047601c12c5d8dd464f72edcb
 
 
   carregarMais() {

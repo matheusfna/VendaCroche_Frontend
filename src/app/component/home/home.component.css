@@ -34,7 +34,11 @@
   right: 0;
   height: 400px;
   background-size: 100%;
+<<<<<<< HEAD
   background-color: #7D336D;
+=======
+  /*background-image: url("../../../assets/imagens/COLOCAR IMAGEM DA HOME");*/
+>>>>>>> 7314bd15d02b997047601c12c5d8dd464f72edcb
   background-position: center;
   background-repeat: no-repeat;
 }

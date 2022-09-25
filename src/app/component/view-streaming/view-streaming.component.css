@@ -17,7 +17,11 @@
     top: 0;
     left: 0;
     right: 0;
+<<<<<<< HEAD
     height:100vh;
+=======
+    height:100vh;    
+>>>>>>> 7314bd15d02b997047601c12c5d8dd464f72edcb
     background-position: center;
     background-repeat: no-repeat;
     /* background-size: 100%; */
