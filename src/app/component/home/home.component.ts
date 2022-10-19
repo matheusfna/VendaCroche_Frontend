@@ -30,57 +30,10 @@ export class HomeComponent implements OnInit {
 
   /*filmes = [
     {
-<<<<<<< HEAD
-      name: "Boneco 1",
-      path: "assets/imagens/1.jpg",
-    },
-    {
-      name: "Croche",
-      path: "assets/imagens/2.jpg",
-    },
-    {
-      name: "Croche2",
-      path: "assets/imagens/3.jpg",
-    },
-    {
-      name: "Croche3",
-      path: "assets/imagens/4.jpg",
-    },  
-    {
-      name: "Croche4",
-      path: "assets/imagens/5.jpg",
-    },
-    {
-      name: "Croche5",
-      path: "assets/imagens/6.jpg",
-    },  
-    {
-      name: "Croche6",
-      path: "assets/imagens/7.jpg",
-    },  
-    {
-      name: "Croche7",
-      path: "assets/imagens/2.jpg",
-    },  
-    {
-      name: "Croche8",
-      path: "assets/imagens/1.jpg",
-    },  
-    {
-      name: "Croche9",
-      path: "assets/imagens/3.jpg",
-    },  
-    {
-      name: "Croche0",
-      path: "assets/imagens/4.jpg",
-    }
-  ]
-=======
       name: Colocar o nome do croche,
       path: "assets/imagens/colocarFotoCroche.jpeg",
     },    
   ]*/
->>>>>>> 7314bd15d02b997047601c12c5d8dd464f72edcb
 
 
   carregarMais() {
