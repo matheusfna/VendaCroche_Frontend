@@ -54,7 +54,7 @@
                     <carousel [cellWidth]='160' [height]="220" [autoplay]="false" [dots]="false" [freeScroll]="false"
                         [arrowsOutside]="true" [loop]="false">
 
-                        <div class="carousel-cell" fxLayout="row" fxLayoutAlign="center center" *ngFor="let f of filmes"
+                        <div class="carousel-cell" fxLayout="row" fxLayoutAlign="center center" *ngFor=""
                             style="background-color: rgb(231, 24, 24);">
                             <app-card-item [title]="f.name" [url]="f.path" [routerLink]="['/view']"></app-card-item>
                         </div>
@@ -83,7 +83,7 @@
                     <carousel [cellWidth]='160' [height]="220" [autoplay]="false" [dots]="false" [freeScroll]="false"
                         [arrowsOutside]="true" [loop]="false">
 
-                        <div class="carousel-cell" fxLayout="row" fxLayoutAlign="center center" *ngFor="let f of filmes"
+                        <div class="carousel-cell" fxLayout="row" fxLayoutAlign="center center" *ngFor=""
                             style="background-color: black;">
                             <app-card-item [title]="f.name" [url]="f.path" [routerLink]="['/view']"></app-card-item>
                         </div>
@@ -98,7 +98,7 @@
 
     </div>
 
-    <!-- <div fxLayout="column" fxLayoutAlign="none" style="width: 100%; height: auto; margin-bottom: 30px;">
+    <div fxLayout="column" fxLayoutAlign="none" style="width: 100%; height: auto; margin-bottom: 30px;">
         <div fxLayout="column" fxLayoutAlign="end start" style="width: 100%; height: auto; ">
         </div>
 
@@ -128,11 +128,11 @@
 
         </div>
 
-    </div> -->
+    </div>
 </div>
 
 
-<!-- <div *ngIf="search != null && search.trim() != '' ">
+<div *ngIf="search != null && search.trim() != '' ">
     <div fxLayout="column" fxLayoutAlign="none" style="width: 100%; height: auto; margin-bottom: 30px;">
         <div fxLayout="column" fxLayoutAlign="end start" style="width: 100%; height: auto; ">
         </div>
@@ -168,4 +168,4 @@
         </div>
     </div>
 
-</div> -->
+</div>
