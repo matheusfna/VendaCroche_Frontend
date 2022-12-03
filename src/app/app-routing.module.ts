@@ -4,7 +4,6 @@ import { HomeComponent } from './component/home/home.component';
 import { LoginComponent } from './component/login/login.component';
 import { ProfileComponent } from './component/profile/profile.component';
 import { RegisterComponent } from './component/register/register.component';
-import { ViewStreamingComponent } from './component/view-streaming/view-streaming.component';
 import { AuthGuard } from './Guard/auth.guard';
 
 const routes: Routes = [
@@ -12,8 +11,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
 
   { path: 'login', component: LoginComponent },
-  { path: 'register', component: RegisterComponent },
-  { path: 'view/:id', component: ViewStreamingComponent},
+  { path: 'register', component: RegisterComponent },  
   { path: 'profile', component: ProfileComponent ,canActivate: [AuthGuard] },
 ];
 

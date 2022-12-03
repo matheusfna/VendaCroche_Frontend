@@ -11,21 +11,12 @@
                 Seu novo amigurumi é aqui!
 
                 <section class="caixa-search">
-                    <input class="caixa-texto" type="text" name="" placeholder="Ex: Boneca">
-                Tati Croche
-                <br>
-                <br>
-                Pedidos de encomendas para aniversarios e presentes.
-                </section>
-                
-
-                <section class="caixa-search">
-                    <input class="caixa-texto" type="text" name="" placeholder="Ex: Croche"
+                    <input class="caixa-texto" type="text" name="" placeholder="Ex: Boneca de Amigurumi"
                         [(ngModel)]="search" (ngModelChange)="filterSearch()">
-                    <a class="botao-search" href="#" *ngIf="search == null || search == '' ">
+                    <a class="botao-search" href="#" *ngIf="search == null || search == 'croche' ">
                         <i class="fas fa-search pointer"></i>
                     </a>
-                    <a class="botao-search" (click)="clear()" *ngIf="search != null && search != '' ">
+                    <a class="botao-search" (click)="clear()" *ngIf="search != null && search != 'croche' ">
                         <i class="fas fa-backspace pointer"></i>
                     </a>
                 </section>
@@ -45,22 +36,23 @@
         <div fxLayout="column" fxLayoutAlign="start start" style="width: 100%; height: auto; ">
             
             <div>
-                <h1 style=" float:left; margin-left: 200px; margin-top: 20px; color: white"> Conheça nosso trabalho</h1>
+                <h1 style=" float:left; margin-left: 200px; margin-top: 20px; color: white"> Trabalhos</h1>
             </div>
 
             <div fxLayout="row" fxLayoutAlign="space-around center"
                 style="width: 100%; height: auto; margin-bottom: 30px;">
                 <div class="container" style="width: 80%; ">
+                    <!-- Carousel com imagens de amigurumis-->
                     <carousel [cellWidth]='160' [height]="220" [autoplay]="false" [dots]="false" [freeScroll]="false"
                         [arrowsOutside]="true" [loop]="false">
 
-                        <div class="carousel-cell" fxLayout="row" fxLayoutAlign="center center" *ngFor=""
+                        <div class="carousel-cell" fxLayout="row" fxLayoutAlign="center center" *ngFor="let f of croche"
                             style="background-color: rgb(231, 24, 24);">
-                            <app-card-item [title]="f.name" [url]="f.path" [routerLink]="['/view']"></app-card-item>
+                             <app-card-item [title]="f.name" [url]="f.path" [routerLink]="['/view']"></app-card-item> 
                         </div>
                     </carousel>
                 </div>
-            </div>
+            </div>         
 
 
         </div>
@@ -83,9 +75,9 @@
                     <carousel [cellWidth]='160' [height]="220" [autoplay]="false" [dots]="false" [freeScroll]="false"
                         [arrowsOutside]="true" [loop]="false">
 
-                        <div class="carousel-cell" fxLayout="row" fxLayoutAlign="center center" *ngFor=""
+                        <div class="carousel-cell" fxLayout="row" fxLayoutAlign="center center" *ngFor="let f of croche"
                             style="background-color: black;">
-                            <app-card-item [title]="f.name" [url]="f.path" [routerLink]="['/view']"></app-card-item>
+                             <app-card-item [title]="f.name" [url]="f.path" [routerLink]="['/view']"></app-card-item>
                         </div>
 
 
@@ -102,28 +94,7 @@
         <div fxLayout="column" fxLayoutAlign="end start" style="width: 100%; height: auto; ">
         </div>
 
-        <div fxLayout="column" fxLayoutAlign="start start" style="width: 100%; height: auto; ">
-
-            <div>
-                <h1 style=" float:left; margin-left: 70px; margin-top: 20px;"> Veja mais </h1>
-            </div>
-
-            <div fxLayout="row" fxLayoutAlign="space-around center"
-                style="width: 100%; height: auto; margin-bottom: 30px;">
-                <div class="container" style="width: 100%; ">
-                    <div class="row text-center text-lg-left">
-
-                        <div class="col-lg-3 col-md-3 col-6" style="margin-bottom: 5px; "
-                            *ngFor="let f of PopularFilmes.results">
-
-                            <app-card-iten-two [movie]='f' (click)="gotoView(f.id)"></app-card-iten-two>
-                        </div>                        
-                        <button (click)="carregarMais()" type="button" class="btn btn-primary"
-                            style=" margin-top: 50px; border-radius: 20px ; padding: 10px; font-size: 20px;  box-shadow: 2px 2px 15px black; border:none; ">Carregar
-                            Mais</button>
-                    </div>
-                </div>
-            </div>
+        <div fxLayout="column" fxLayoutAlign="start start" style="width: 100%; height: auto; ">                 
 
 
         </div>
@@ -154,13 +125,10 @@
                     <div class="row text-center text-lg-left">
 
                         <div class="col-lg-3 col-md-3 col-6" style="margin-bottom: 5px; "
-                            *ngFor="let f of searchFilmes.results">
+                            *ngFor="let f of search.croche.results">
 
                             <app-card-iten-two [movie]='f' (click)="gotoView(f.id)"></app-card-iten-two>
-                        </div>
-                        <button (click)="carregarMaisSearch()" type="button" class="btn btn-primary"
-                            style=" margin-top: 50px; border-radius: 20px ; padding: 10px; font-size: 20px;  box-shadow: 2px 2px 15px black; border:none; ">Carregar
-                            Mais</button>
+                        </div>                        
                     </div>
                 </div>
             </div>

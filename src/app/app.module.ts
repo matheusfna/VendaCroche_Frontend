@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -24,12 +25,12 @@ import {MatInputModule} from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCheckboxModule} from '@angular/material/checkbox';
-import { ViewStreamingComponent } from './component/view-streaming/view-streaming.component';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { SearchComponent } from './shared/search/search.component';
-import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { ProfileComponent } from './component/profile/profile.component';
 import { AuthGuard } from './Guard/auth.guard';
+import { NameEditorComponent } from './component/name-editor/name-editor.component';
 
 
 
@@ -43,10 +44,10 @@ import { AuthGuard } from './Guard/auth.guard';
     HeaderTwoComponent,
     CardItemComponent,
     FooterComponent,
-    CardItenTwoComponent,
-    ViewStreamingComponent,
+    CardItenTwoComponent,    
     SearchComponent,
     ProfileComponent,
+    NameEditorComponent,
   ],
   imports: [
     BrowserModule,
@@ -62,7 +63,9 @@ import { AuthGuard } from './Guard/auth.guard';
     FormsModule,
     MatButtonModule,
     MatCheckboxModule,
-    MatExpansionModule
+    MatExpansionModule,
+    ReactiveFormsModule,
+    
   ],
   providers: [
     AuthGuard,

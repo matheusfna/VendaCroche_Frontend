@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ViewStreamingComponent } from './view-streaming.component';
+import { NameEditorComponent } from './name-editor.component';
 
-describe('ViewStreamingComponent', () => {
-  let component: ViewStreamingComponent;
-  let fixture: ComponentFixture<ViewStreamingComponent>;
+describe('NameEditorComponent', () => {
+  let component: NameEditorComponent;
+  let fixture: ComponentFixture<NameEditorComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ViewStreamingComponent ]
+      declarations: [ NameEditorComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ViewStreamingComponent);
+    fixture = TestBed.createComponent(NameEditorComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

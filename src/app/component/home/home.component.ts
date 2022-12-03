@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { MovieResults, Results } from 'src/app/models/movie.model';
+import { Results } from 'src/app/models/movie.model';
 import { MovieService } from 'src/app/service/movie.service';
 
 @Component({
@@ -9,8 +9,8 @@ import { MovieService } from 'src/app/service/movie.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  PopularFilmes: any = new Results();
-  searchFilmes: any = new Results();
+  Popularcroche: any = new Results();
+  searchcroche: any = new Results();
   page: number = 0;
   pageSearch: number = 0;
 
@@ -18,8 +18,8 @@ export class HomeComponent implements OnInit {
   constructor(private movieService: MovieService, private router: Router) {
 
     this.movieService.getMaisPopular().subscribe(data => {
-      this.PopularFilmes = new Results(data);
-      this.page = this.PopularFilmes.page;
+      this.Popularcroche = new Results(data);
+      this.page = this.Popularcroche.page;
 
     });
   }
@@ -28,33 +28,26 @@ export class HomeComponent implements OnInit {
 
   }
 
-  /*filmes = [
+  croche = [
     {
-      name: Colocar o nome do croche,
-      path: "assets/imagens/colocarFotoCroche.jpeg",
-    },    
-  ]*/
+      id:1,
+      name: "Croche de Boneca",
+      path: "../assests/imagens/1.jpeg",
+    },
+    
+    {
+      id:2,
+      name: "Croche de Boneca",
+      path: ".../assets/imagens/2.jpeg",
+    },   
+    {
+      id:3,
+      name: "Croche de Boneca",
+      path: ".../assets/imagens/3.jpeg",
+    }
+    
+  ]
 
-
-  carregarMais() {
-    this.movieService.getMaisPopularPage((++this.page)).subscribe(data => {
-      for (const iterator of data.results) {
-        this.PopularFilmes.results.push(new MovieResults(iterator));
-      }
-      this.PopularFilmes.page = data.page;
-      this.page = data.page;
-    });
-  }
-
-  carregarMaisSearch() {
-    this.movieService.searchMoviePage(this.search,(++this.page)).subscribe(data => {
-      for (const iterator of data.results) {
-        this.searchFilmes.results.push(new MovieResults(iterator));
-      }
-      this.searchFilmes.page = data.page;
-      this.pageSearch = data.page;
-    });
-  }
 
 
   filterSearch() {
@@ -63,8 +56,8 @@ export class HomeComponent implements OnInit {
 
       this.movieService.searchMovie(this.search).subscribe(data => {
 
-        this.searchFilmes = new Results(data);
-        this.pageSearch = this.searchFilmes.page;
+        this.searchcroche = new Results(data);
+        this.pageSearch = this.searchcroche.page;
 
 
       });

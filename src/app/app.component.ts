@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
-import { environment } from 'src/environments/environment';
 import { Results } from './models/movie.model';
 import { LoginService } from './service/login.service';
-import { MovieService } from './service/movie.service';
+
 
 @Component({
   selector: 'app-root',
@@ -15,14 +14,10 @@ export class AppComponent {
   listUsers = [
 
     {
-      nome: "CzarAdmin",
-      email: 'tatiCroche@fumec.com',
+      nome: "Tatiana",
+      email: 'taticroche@fumec.com',
       password: '123456789'
-    },    {
-      nome: "teste",
-      email: 'teste@fumec.com',
-      password: '123456789'
-    },
+    }
 
   
   ]

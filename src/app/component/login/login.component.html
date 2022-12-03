@@ -8,25 +8,16 @@
         <div class ="matriz" fxLayout="column" fxLayoutAlign="center center">
 
           <form class = "form" method="post" action="">
-            <p class="descricao"> Preencha todos os campos para efetuar <br> seu login </p>
-            <p class="descricao"> Preencha todos os campos para efetuar <br> seu login. </p>
+            <p class="descricao"> Preencha todos os campos para efetuar <br> seu login </p>            
             <div fxLayout="column" fxLayoutAlign="center center " style=" width: 100%; height: auto;">
 
               <div class = "caixa-input" fxLayout="column" fxLayoutAlign="center center ">
                 <mat-form-field class="example-full-width">
                   <mat-label class="label">Digite o seu E-mail</mat-label>
                   
-                  <input class = "input" matInput placeholder="Ex. taticroches@fumec.com" name="email"  [(ngModel)]="email">
+                  <input class = "input" matInput placeholder="email@fumec.com" name="email"  [(ngModel)]="email">
                   
-                  <mat-hint style="color: red; font-size: 12px; font-weight: bold;"  *ngIf="errorEmail == true">Preencha o campo e-mail</mat-hint>
-
-
-
-                  <input class = "input" matInput placeholder="Ex. taticroche@croche.com" name="email"  [(ngModel)]="email">
-
-
-
-                    <mat-hint style="color: red; font-size: 12px; font-weight: bold;"  *ngIf="errorEmail == true">Preencha o campo e-mail</mat-hint>
+                  <mat-hint style="color: red; font-size: 12px; font-weight: bold;"  *ngIf="errorEmail == true">Preencha o campo e-mail</mat-hint>                                   
    
                 </mat-form-field>
               </div>
